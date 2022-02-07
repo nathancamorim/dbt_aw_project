@@ -1,0 +1,46 @@
+version: 2
+
+sources:
+  - name: adventureworks_project
+    description: This is a replica of the Postgres database used by our sales data
+    tables:
+      - name: salesorderdetail
+        description: >
+          One record per order. Includes cancelled and deleted orders.
+        columns:
+          - name: salesorderid
+            description: Primary key of the orders table
+            
+      - name: creditcard
+        description: This table represents the data about creditcard used by the customers
+
+      - name: salesreason
+        description: This table represents the data about sales reason
+
+      - name: salesorderheader
+        description: This table represents the revenue from the sales orders 
+
+      - name: address
+        description: This table represents the data about people address (customers) 
+
+      - name: countryregion
+        description: This table represents the data about people country region (customers)
+
+      - name: person
+        description: This table represents the data about people country region (customers) 
+
+      - name: stateprovince
+        description: This table represents the data about people state province list
+
+      - name: product
+        description: This table represents the data about people state province list  
+
+      - name: salesorderheadersalesreason
+        description: This table represents the data about people state province list
+
+      - name: store
+        description: This table represents the data about customer stores and their names 
+
+      - name: customer
+        description: This table represents the data about customer information 
+  
