@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: dim_salesreason
+    columns:
+      - name: salesorderid
+        description: primary key of the salesorderheaderreasons
+        tests:
+          - unique
+          - not_null
+
+      - name: salesreasons
+        description: natural key of the address
+
+
+      
