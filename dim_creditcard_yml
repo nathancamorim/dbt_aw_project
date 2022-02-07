@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: dim_creditcard
+    columns:
+      - name: creditcard_sk
+        description: primary key of the creditcard dimension
+        tests:
+          - unique
+          - not_null
+
+      - name: salesreasons
+        description: sales reason name
+
+      - name: cardtype
+        description: cardtype used by the customer
