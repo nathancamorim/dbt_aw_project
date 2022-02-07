@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: dim_address
+    columns:
+      - name: addressid
+        description: primary key of the address
+        tests:
+          - unique
+          - not_null
+
+      - name: city
+        description: natural key of the address
+
+      - name: stateprovinceid
+        description: ID of the province/state 
+    
+      - name: statename
+        description: name of the state
+
+      - name: countryregioncode
+        description: country region code
+        
+      - name: countryname
+        description: name of the country
+
